@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "BuildingOurFirstSSISPackage", "BuildingOurFirstSSISPackage\BuildingOurFirstSSISPackage.dtproj", "{EE0EAD46-910B-4A0C-8DB2-A12DF0E64DD4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{34B2EEFE-90A9-469D-AA3D-011966D86C50}"
+	ProjectSection(SolutionItems) = preProject
+		Files\Products.csv = Files\Products.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
