@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.AdvWrk17"
+  DTS:DTSID="{135A99B9-1938-4A4B-9125-DEEFC73D77C1}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::SourceDB]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::SourceServer]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=AdvWrk17;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package-{135A99B9-1938-4A4B-9125-DEEFC73D77C1}localhost.AdvWrk17;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
