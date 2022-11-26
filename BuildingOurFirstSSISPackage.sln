@@ -8,7 +8,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{34B2EEFE-90A9-469D-AA3D-011966D86C50}"
 	ProjectSection(SolutionItems) = preProject
 		Files\Products.csv = Files\Products.csv
+		Files\Files\Products.csv = Files\Files\Products.csv
+		Files\Files\ProductUpd1.csv = Files\Files\ProductUpd1.csv
+		Files\Files\ProductUpd2.csv = Files\Files\ProductUpd2.csv
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProcessedFiles", "ProcessedFiles", "{7CE39699-C70D-459A-8D96-DA542E406D8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CE39699-C70D-459A-8D96-DA542E406D8E} = {34B2EEFE-90A9-469D-AA3D-011966D86C50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2180E1F8-8690-433B-A6FF-E0447CA3E68C}

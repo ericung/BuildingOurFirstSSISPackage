@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{427F2141-86CB-4A3E-BDB5-B2B544A8C96D}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{A710168E-C837-4D97-ACB6-E6CCC6095D9D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -157,7 +157,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\unger\Downloads\building-first-ssis-package\05\demos\Files" />
+              Folder="C:\Users\unger\source\repos\BuildingOurFirstSSISPackage\Files\Files" />
             <FEFEProperty
               FileSpec="*.*" />
             <FEFEProperty
@@ -1923,8 +1923,8 @@ where [refTable].[ProductID] = ?</property>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{7288BB72-67E2-4A42-9551-C0D8C1D8468A}"
-          DTS:ObjectName="{7288BB72-67E2-4A42-9551-C0D8C1D8468A}"
+          DTS:DTSID="{2F753AEA-E48F-4EFC-BA68-36592A5F4173}"
+          DTS:ObjectName="{2F753AEA-E48F-4EFC-BA68-36592A5F4173}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileNamePath" />
       </DTS:ForEachVariableMappings>
@@ -1969,17 +1969,21 @@ where [refTable].[ProductID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
+          Size="168,43"
+          Id="Package\Loop CSV Files\Execute SQL Task"
+          TopLeft="93.8333228652676,218.315797535666" />
+        <NodeLayout
+          Size="185,43"
           Id="Package\Loop CSV Files\Importing the products"
           TopLeft="91.0833301482102,121.210529406645" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="161,43"
+          Id="Package\Loop CSV Files\Moving CSV Files"
+          TopLeft="89.2083301761498,323.280710035304" />
+        <NodeLayout
+          Size="152,43"
           Id="Package\Loop CSV Files\Truncate Table"
           TopLeft="102.583322734883,30.8421097964132" />
-        <NodeLayout
-          Size="168,42.6666666666667"
-          Id="Package\Loop CSV Files\Execute SQL Task"
-          TopLeft="93.8333228652676,218.315797535666" />
         <EdgeLayout
           Id="Package\Loop CSV Files.PrecedenceConstraints[Constraint]"
           TopLeft="181.16665977488,73.50877646308">
@@ -2024,10 +2028,6 @@ where [refTable].[ProductID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
-          Id="Package\Loop CSV Files\Moving CSV Files"
-          TopLeft="89.2083301761498,323.280710035304" />
         <EdgeLayout
           Id="Package\Loop CSV Files.PrecedenceConstraints[Constraint 2]"
           TopLeft="173.854159854042,260.982464202333">
@@ -2053,12 +2053,12 @@ where [refTable].[ProductID] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="354.666666666667,420.666666666667"
-          Size="354.666666666667,464"
+          PanelSize="355,421"
+          Size="355,464"
           Id="Package\Loop CSV Files"
           TopLeft="122.499998174608,111.114005930647" />
         <NodeLayout
-          Size="168,42.6666666666667"
+          Size="168,43"
           Id="Package\TRUNCATE TABLE ProductsCSV"
           TopLeft="263.124996079132,43.4912281860825" />
         <EdgeLayout

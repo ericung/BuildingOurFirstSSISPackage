@@ -1,0 +1,3 @@
+ProductID,ProductName,SupplierID,CategoryID,QuantityPerUnit,UnitPrice,UnitsInStock,UnitsOnOrder,ReorderLevel,Discontinued
+5,Chef Anton's Gumbo Mix,2,2,36 boxes,21.35,0,0,0,True
+11,Queso Cabrales Extra,5,4,1 kg pkg.,21,22,30,30,False
