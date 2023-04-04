@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{EF0A66DE-7BFB-4210-B641-26F7D59A3D3B}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{C2C88AD8-4C75-4595-951B-1C29CBFD24E1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -259,7 +259,7 @@
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ProductName"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Conditional Split.Inputs[Conditional Split Input].Columns[matchProductName]"
                           cachedCodepage="1252"
@@ -286,7 +286,7 @@
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
-                          name="Expression">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]} != #{Package\Loop CSV Files\Importing the products\Lookup.Outputs[Lookup Match Output].Columns[matchProductName]}</property>
+                          name="Expression">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]} != #{Package\Loop CSV Files\Importing the products\Lookup.Outputs[Lookup Match Output].Columns[matchProductName]}</property>
                         <property
                           containsID="true"
                           dataType="System.String"
@@ -356,7 +356,7 @@
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ProductID"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]" />
                       </inputColumns>
                       <externalMetadataColumns />
                     </input>
@@ -381,7 +381,7 @@
                               containsID="true"
                               dataType="System.Int32"
                               description="Specifies the input column used as the source of data for the conversion."
-                              name="SourceInputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]}</property>
+                              name="SourceInputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]}</property>
                             <property
                               dataType="System.Boolean"
                               description="Indicates whether the column uses the faster, locale-neutral parsing routines."
@@ -501,7 +501,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ProductID"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]">
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]">
                           <properties>
                             <property
                               dataType="System.String"
@@ -1016,7 +1016,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="ProductID"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[ProductName]"
                           cachedCodepage="1252"
@@ -1024,7 +1024,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="ProductName"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[SupplierID]"
                           cachedCodepage="1252"
@@ -1032,7 +1032,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="SupplierID"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[SupplierID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[CategoryID]"
                           cachedCodepage="1252"
@@ -1040,7 +1040,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="CategoryID"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[CategoryID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[QuantityPerUnit]"
                           cachedCodepage="1252"
@@ -1048,7 +1048,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="QuantityPerUnit"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[QuantityPerUnit]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
                           cachedCodepage="1252"
@@ -1056,7 +1056,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="UnitPrice"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitPrice]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[UnitsInStock]"
                           cachedCodepage="1252"
@@ -1064,7 +1064,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="UnitsInStock"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsInStock]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[UnitsOnOrder]"
                           cachedCodepage="1252"
@@ -1072,7 +1072,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="UnitsOnOrder"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsOnOrder]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[ReorderLevel]"
                           cachedCodepage="1252"
@@ -1080,7 +1080,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="ReorderLevel"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ReorderLevel]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[Discontinued]"
                           cachedCodepage="1252"
@@ -1088,7 +1088,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="Discontinued"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[Discontinued]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Products.Inputs[OLE DB Destination Input].Columns[intProductId]"
                           cachedDataType="i8"
@@ -1218,70 +1218,70 @@ where [refTable].[ProductID] = ?</property>
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ProductID"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[ProductName]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ProductName"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[SupplierID]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="SupplierID"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[SupplierID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[CategoryID]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="CategoryID"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[CategoryID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[QuantityPerUnit]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="QuantityPerUnit"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[QuantityPerUnit]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[UnitPrice]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="UnitPrice"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitPrice]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[UnitsInStock]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="UnitsInStock"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsInStock]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[UnitsOnOrder]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="UnitsOnOrder"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsOnOrder]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[ReorderLevel]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="ReorderLevel"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ReorderLevel]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[Discontinued]"
                           cachedCodepage="1252"
                           cachedDataType="str"
                           cachedLength="50"
                           cachedName="Discontinued"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[Discontinued]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1].Columns[intProductId]"
                           cachedDataType="i8"
@@ -1328,7 +1328,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1343,7 +1343,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1358,7 +1358,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[SupplierID]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1373,7 +1373,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[CategoryID]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1388,7 +1388,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[QuantityPerUnit]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1403,7 +1403,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitPrice]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1418,7 +1418,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsInStock]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1433,7 +1433,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsOnOrder]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1448,7 +1448,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ReorderLevel]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1463,7 +1463,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[Discontinued]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1534,7 +1534,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1549,7 +1549,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1564,7 +1564,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[SupplierID]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1579,7 +1579,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[CategoryID]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1594,7 +1594,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[QuantityPerUnit]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1609,7 +1609,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitPrice]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1624,7 +1624,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsInStock]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1639,7 +1639,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsOnOrder]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1654,7 +1654,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ReorderLevel]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1669,7 +1669,7 @@ where [refTable].[ProductID] = ?</property>
                               containsID="true"
                               dataType="System.Int32"
                               description="Input column lineage ID"
-                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]}</property>
+                              name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[Discontinued]}</property>
                           </properties>
                         </outputColumn>
                         <outputColumn
@@ -1715,6 +1715,1509 @@ where [refTable].[ProductID] = ?</property>
                               name="InputColumnLineageID">#{Package\Loop CSV Files\Importing the products\Lookup.Outputs[Lookup Match Output].Columns[matchUnitPrice]}</property>
                           </properties>
                         </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loop CSV Files\Importing the products\Script Component"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;12"
+                  description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+                  name="Script Component"
+                  version="12">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Stores the source code of the component"
+                      isArray="true"
+                      name="SourceCode"
+                      state="cdata">
+                      <arrayElements
+                        arrayElementCount="30">
+                        <arrayElement
+                          dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public Output0Buffer Output0Buffer;
+
+    int InputsFinished = 0;
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+        if (Buffer.EndOfRowset)
+        {
+            InputsFinished = InputsFinished + 1;
+            if (InputsFinished == 1)
+            {
+                FinishOutputs();
+                MarkOutputsFinished();
+            }
+        }
+
+    }
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != Output0Buffer)
+        {
+            Output0Buffer.SetEndOfRowset();
+            Output0Buffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
+            {
+                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+        }
+
+        CreateNewOutputRows();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    public override void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+
+        if (Buffer.EndOfRowset())
+        {
+            Output0Buffer.SetEndOfRowset();
+        }
+    }
+
+    /// <summary>
+    /// This method is called once for every row that passes through the component from Input0.
+    ///
+    /// Example of reading a value from a column in the the row:
+    ///  string zipCode = Row.ZipCode
+    ///
+    /// Example of writing a value to a column in the row:
+    ///  Row.ZipCode = zipCode
+    /// </summary>
+    /// <param name="Row">The row that is currently passing through the component</param>
+    public override void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+        /*
+         * Add your code here
+         */
+        Output0Buffer.AddRow();
+        Output0Buffer.ProductID = Row.ProductID;
+        Output0Buffer.ProductName = Row.ProductName;
+        Output0Buffer.SupplierID = Row.SupplierID;
+        Output0Buffer.CategoryID = Row.CategoryID;
+        Output0Buffer.QuantityPerUnit = Row.QuantityPerUnit;
+        Output0Buffer.UnitPrice = Row.UnitPrice;
+        Output0Buffer.UnitsInStock = Row.UnitsInStock;
+        Output0Buffer.UnitsOnOrder = Row.UnitsOnOrder;
+
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Input0Buffer: ScriptBuffer
+
+{
+    public Input0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String ProductID
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[0]);
+        }
+    }
+    public bool ProductID_IsNull
+    {
+        get
+        {
+            return IsNull(0);
+        }
+    }
+
+    public String ProductName
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[1]);
+        }
+    }
+    public bool ProductName_IsNull
+    {
+        get
+        {
+            return IsNull(1);
+        }
+    }
+
+    public String SupplierID
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[2]);
+        }
+    }
+    public bool SupplierID_IsNull
+    {
+        get
+        {
+            return IsNull(2);
+        }
+    }
+
+    public String CategoryID
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[3]);
+        }
+    }
+    public bool CategoryID_IsNull
+    {
+        get
+        {
+            return IsNull(3);
+        }
+    }
+
+    public String QuantityPerUnit
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[4]);
+        }
+    }
+    public bool QuantityPerUnit_IsNull
+    {
+        get
+        {
+            return IsNull(4);
+        }
+    }
+
+    public String UnitPrice
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[5]);
+        }
+    }
+    public bool UnitPrice_IsNull
+    {
+        get
+        {
+            return IsNull(5);
+        }
+    }
+
+    public String UnitsInStock
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[6]);
+        }
+    }
+    public bool UnitsInStock_IsNull
+    {
+        get
+        {
+            return IsNull(6);
+        }
+    }
+
+    public String UnitsOnOrder
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[7]);
+        }
+    }
+    public bool UnitsOnOrder_IsNull
+    {
+        get
+        {
+            return IsNull(7);
+        }
+    }
+
+    public String ReorderLevel
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[8]);
+        }
+    }
+    public bool ReorderLevel_IsNull
+    {
+        get
+        {
+            return IsNull(8);
+        }
+    }
+
+    public String Discontinued
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[9]);
+        }
+    }
+    public bool Discontinued_IsNull
+    {
+        get
+        {
+            return IsNull(9);
+        }
+    }
+
+    new public bool NextRow()
+    {
+        return base.NextRow();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+
+public class Output0Buffer: ScriptBuffer
+
+{
+    public Output0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String ProductID
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool ProductID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String ProductName
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool ProductName_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String SupplierID
+    {
+        set
+        {
+            this[2] = value;
+        }
+    }
+    public bool SupplierID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(2);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String CategoryID
+    {
+        set
+        {
+            this[3] = value;
+        }
+    }
+    public bool CategoryID_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String QuantityPerUnit
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool QuantityPerUnit_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String UnitPrice
+    {
+        set
+        {
+            this[5] = value;
+        }
+    }
+    public bool UnitPrice_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(5);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String UnitsInStock
+    {
+        set
+        {
+            this[6] = value;
+        }
+    }
+    public bool UnitsInStock_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(6);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String UnitsOnOrder
+    {
+        set
+        {
+            this[7] = value;
+        }
+    }
+    public bool UnitsOnOrder_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(7);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String ReorderLevel
+    {
+        set
+        {
+            this[8] = value;
+        }
+    }
+    public bool ReorderLevel_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(8);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String Discontinued
+    {
+        set
+        {
+            this[9] = value;
+        }
+    }
+    public bool Discontinued_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(9);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_8069db321fd4404aa4b29a9bc296ca57.Properties.Settings.get_Default():SC_8069db321fd4404aa4b29a9bc296ca57.Properties.Sett" +
+    "ings")]
+
+namespace SC_8069db321fd4404aa4b29a9bc296ca57.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[SC_8069db321fd4404aa4b29a9bc296ca57.csproj]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47e79dcd-40a8-4ae5-96a5-2b0224ee5bfa}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_8069db321fd4404aa4b29a9bc296ca57</RootNamespace>
+    <AssemblyName>SC_8069db321fd4404aa4b29a9bc296ca57</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_8069db321fd4404aa4b29a9bc296ca57" IconIndex="0"></Host>
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Project]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_8069db321fd4404aa4b29a9bc296ca57</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_8069db321fd4404aa4b29a9bc296ca57</msb:DisplayName>
+    <msb:ProjectId>{328548BA-A489-47B8-BC8C-488F2C4B2062}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_8069db321fd4404aa4b29a9bc296ca57.csproj" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_8069db321fd4404aa4b29a9bc296ca57")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_8069db321fd4404aa4b29a9bc296ca57")]
+[assembly: AssemblyCopyright("Copyright @  2023")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_8069db321fd4404aa4b29a9bc296ca57.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_8069db321fd4404aa4b29a9bc296ca57.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_8069db321fd4404aa4b29a9bc296ca57.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_8069db321fd4404aa4b29a9bc296ca57.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_8069db321fd4404aa4b29a9bc296ca57.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                      </arrayElements>
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Stores the binary representation of the component"
+                      isArray="true"
+                      name="BinaryCode"
+                      state="cdata">
+                      <arrayElements
+                        arrayElementCount="2">
+                        <arrayElement
+                          dataType="System.String"><![CDATA[SC_8069db321fd4404aa4b29a9bc296ca57.dll]]></arrayElement>
+                        <arrayElement
+                          dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAPp7K2QAAAAAAAAAAOAAIiALATAAAB4AAAAIAAAAAAAAyj0A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAHg9AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA0B0AAAAgAAAAHgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAgAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAJgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACs
+PQAAAAAAAEgAAAACAAUATCUAAHQXAAABAAAAAAAAAMA8AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiqWKwcCA288AAAGA28bAAAGLfED
+bxwAAAYsCwJ7AwAABG8zAAAGKgAAEzACAJQAAAAAAAAAAnsDAAAEbzIAAAYCewMAAAQDbwcAAAZv
+HgAABgJ7AwAABANvCQAABm8gAAAGAnsDAAAEA28LAAAGbyIAAAYCewMAAAQDbw0AAAZvJAAABgJ7
+AwAABANvDwAABm8mAAAGAnsDAAAEA28RAAAGbygAAAYCewMAAAQDbxMAAAZvKgAABgJ7AwAABANv
+FQAABm8sAAAGKh4CKDUAAAYqKgIDBAUoEgAACipSAnsTAAAKAnsUAAAKFpRvFQAACioiAhYoFgAA
+CipSAnsTAAAKAnsUAAAKF5RvFQAACioiAhcoFgAACipSAnsTAAAKAnsUAAAKGJRvFQAACioiAhgo
+FgAACipSAnsTAAAKAnsUAAAKGZRvFQAACioiAhkoFgAACipSAnsTAAAKAnsUAAAKGpRvFQAACioi
+AhooFgAACipSAnsTAAAKAnsUAAAKG5RvFQAACioiAhsoFgAACipSAnsTAAAKAnsUAAAKHJRvFQAA
+CioiAhwoFgAACipSAnsTAAAKAnsUAAAKHZRvFQAACioiAh0oFgAACipSAnsTAAAKAnsUAAAKHpRv
+FQAACioiAh4oFgAACipWAnsTAAAKAnsUAAAKHwmUbxUAAAoqJgIfCSgWAAAKKh4CKBcAAAoqHgIo
+GAAACiomAhYDKBkAAAoqWgMsCAIWKBoAAAoqcgEAAHBzGwAACnomAhcDKBkAAAoqWgMsCAIXKBoA
+AAoqcgEAAHBzGwAACnomAhgDKBkAAAoqWgMsCAIYKBoAAAoqcgEAAHBzGwAACnomAhkDKBkAAAoq
+WgMsCAIZKBoAAAoqcgEAAHBzGwAACnomAhoDKBkAAAoqWgMsCAIaKBoAAAoqcgEAAHBzGwAACnom
+AhsDKBkAAAoqWgMsCAIbKBoAAAoqcgEAAHBzGwAACnomAhwDKBkAAAoqWgMsCAIcKBoAAAoqcgEA
+AHBzGwAACnomAh0DKBkAAAoqWgMsCAIdKBoAAAoqcgEAAHBzGwAACnomAh4DKBkAAAoqWgMsCAIe
+KBoAAAoqcgEAAHBzGwAACnoqAh8JAygZAAAKKl4DLAkCHwkoGgAACipyAQAAcHMbAAAKeh4CKBwA
+AAoqHgIoHQAACip+AigeAAAKAgJzPQAABn0BAAAEAgJzPgAABn0CAAAEKgAAABMwBABPAAAAAAAA
+AARyngAAcBpvHwAACiwVAgUCAyggAAAKDgRzBgAABm87AAAGBW8hAAAKLCMCAnsEAAAEF1h9BAAA
+BAJ7BAAABBczDAJvNwAABgIoOAAABioGKm4CewMAAAQsEgJ7AwAABG8zAAAGAhR9AwAABCoAAAAT
+MAUAPQAAAAEAABEWCisuBAaUDgRyrgAAcCgiAAAKMxkCBQaaAgQGlCggAAAKDgRzHQAABn0DAAAE
+BhdYCgYDMs4CbzoAAAYqSisHAgNvPAAABgNvGwAABi3xKjoCKCMAAAoCA30FAAAEKjoCKCMAAAoC
+A30GAAAEKh4CKCMAAAoqrn4HAAAELR5ywAAAcNAIAAACKCQAAApvJQAACnMmAAAKgAcAAAR+BwAA
+BCoafggAAAQqHgKACAAABCoafgkAAAQqHgIoJwAACiouc0QAAAaACQAABCpCU0pCAQABAAAAAAAM
+AAAAdjQuMC4zMDMxOQAAAAAFAGwAAABkCgAAI34AANAKAACgCQAAI1N0cmluZ3MAAAAAcBQAADQB
+AAAjVVMApBUAABAAAAAjR1VJRAAAALQVAADAAQAAI0Jsb2IAAAAAAAAAAgAAAVcVogEJAQAAAPoB
+MwAWAAABAAAAHwAAAAkAAAAJAAAARQAAACkAAAAnAAAAEAAAAAEAAAAEAAAAKwAAACwAAAABAAAA
+BAAAAAEAAAAAABYEAQAAAAAABgDJAl8HBgBdA18HBgAVAkwHDwDTBwAABgBCAmcGBgCsAmcGBgCN
+AmcGBgBEA2cGBgDpAmcGBgACA2cGBgBZAmcGBgB0ApgDCgAdA2IBCgAUB2IBDgAFB2IBCgCwBmIB
+CgD+CGIBBgCGCB8GBgD4AUwHBgAlB38HBgCkBlIGEgDIAd4DEgApAt4DEgCwAT0GBgDdAV8HBgB5
+Bh8GBgC1Ax8GBgCTBh8GBgCDAR8GBgAUAR8GBgCWCWcGAAAAACUAAAAAAAEAAQABABAAMgYAABQA
+AQABAAEAEADqBgAAOQABAAYAAQAQAPcGAAA5AAEAHQABABAA4AgAAEUAAQA1AAEAEABQCAAASQAF
+AD0AAQAQABEIAABJAAYAPgAAABAAhgfiB0kABwA/AAABEABACOIHYQAJAEMABgBQCH4ABgARCIIA
+BgD3BoYAAQCjAIoAAQDuCI0AAQDuCI0AEQAmBpEAEQCgAZUAEQAEAZkAUCAAAAAAxgB7AwYAAQBY
+IAAAAADGAIYDBgABAGAgAAAAAMYATAmdAAEAiCAAAAAAxgBzCZ0AAgAoIQAAAACGGDUHBgADADAh
+AAAAAIYYNQcbAAMAOyEAAAAAhghMAKMABgBQIQAAAACGCGoENwAGAFkhAAAAAIYIOAGjAAYAbiEA
+AAAAhggaBTcABgB3IQAAAACGCC4AowAGAIwhAAAAAIYIPgQ3AAYAlSEAAAAAhgh8AKMABgCqIQAA
+AACGCJQENwAGALMhAAAAAIYIrAijAAYAyCEAAAAAhgjYBTcABgDRIQAAAACGCOgAowAGAOYhAAAA
+AIYI8AQ3AAYA7yEAAAAAhgi8A6MABgAEIgAAAACGCEgFNwAGAA0iAAAAAIYIyAajAAYAIiIAAAAA
+hgioBTcABgArIgAAAACGCPQDowAGAEAiAAAAAIYIeAU3AAYASSIAAAAAhgjGAKMABgBfIgAAAACG
+CMAENwAGAGkiAAAAAIYAigk3AAYAcSIAAAAAhgCgCDcABgAwIQAAAACGGDUHGwAGAHkiAAAAAIYI
+WgAQAAkAgyIAAAAAhgh/BKcACgCaIgAAAACGCEgBEAALAKQiAAAAAIYIMQWnAAwAuyIAAAAAhgg9
+ABAADQDFIgAAAACGCFQEpwAOANwiAAAAAIYIiwAQAA8A5iIAAAAAhgiqBKcAEAD9IgAAAACGCMAI
+EAARAAcjAAAAAIYI8wWnABIAHiMAAAAAhgj2ABAAEwAoIwAAAACGCAUFpwAUAD8jAAAAAIYIzQMQ
+ABUASSMAAAAAhghgBacAFgBgIwAAAACGCNkGEAAXAGojAAAAAIYIwAWnABgAgSMAAAAAhggFBBAA
+GQCLIwAAAACGCJAFpwAaAKIjAAAAAIYI1wAQABsArSMAAAAAhgjYBKcAHADFIwAAAACGAGwJBgAd
+AM0jAAAAAIYAnQgGAB0AcSIAAAAAhgCgCDcAHQDVIwAAAACGGDUHBgAdAPgjAAAAAMYAUwmsAB0A
+UyQAAAAAxgFkCAYAIQBVJAAAAACBALIABgAhAHQkAAAAAMYAYAm2ACEAUyQAAAAAxgFyCAYAJQC9
+JAAAAADGAUwJnQAlAFMkAAAAAMYBcwmdACYA0CQAAAAAhhg1B8IAJwDfJAAAAACGGDUHwgAoAO4k
+AAAAAIMYNQcGACkA9iQAAAAAkwghB8gAKQAiJQAAAACTCIgBzQApACklAAAAAJMIlAHSACkAMSUA
+AAAAlgjUCNgAKgA4JQAAAACGGDUHBgAqAEAlAAAAAJEYOwfdACoAAAABABoHAAABAI4JAAABABoH
+AAACABsIAAADAL4GAAABABoHAAACABsIAAADAL4GAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAAB
+AJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJID
+AAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAJIDAAABAGgAAAACAFgBAAADABoHAAAE
+AL4GAAABAGoIAAACAEIHAAADAFwIAAAEAL4GAAABABoHAAABAI4JAAABAAQJAAABAAQJAAABAJID
+CQA1BwEAEQA1BwYAGQA1BwoAKQA1BxAAMQA1BxAAOQA1BxAAQQA1BxAASQA1BxAAUQA1BxAAWQA1
+BxAAYQA1BxAAaQA1BwYAmQA1BwYAuQA1BxUAyQA1BwYAiQB7AwYAiQCGAwYAcQA1BxsAcQAaByUA
+cQAbCCkAeQCyAy0AcQAHBjIAcQCKCTcAcQCgCDcAcQAWBjsAcQAOBgEA0QA1BxAAcQBsCQYAcQCd
+CAYAiQA1BwYA2QBJCEEAiQAvCEgAeQCNCDcAiQBwAFIAkQA1BwYA6QAmAVkA6QCSCWAAoQA1B2UA
+wQA1BwYALgALAPgALgATAAEBLgAbACABLgAjACkBLgArAFIBLgAzAFIBLgA7AFIBLgBDACkBLgBL
+AFgBLgBTAFIBLgBbAG8BQwBjALkBAwFrALkBIQF7ALkBKQVzACABSQVzACABTgADAAEABAAVAAgA
+KQAJACsAAABeAOEAAACDBOUAAABMAeEAAAA1BeUAAABBAOEAAABYBOUAAACPAOEAAACuBOUAAADE
+COEAAAD3BeUAAAD6AOEAAAAJBeUAAADRA+EAAABkBeUAAADdBuEAAADEBeUAAAAJBOEAAACUBeUA
+AADbAOEAAADcBOUAAABeAOEAAACDBOUAAABMAeEAAAA1BeUAAABBAOEAAABYBOUAAACPAOEAAACu
+BOUAAADECOEAAAD3BeUAAAD6AOEAAAAJBeUAAADRA+EAAABkBeUAAADdBuEAAADEBeUAAAAJBOEA
+AACUBeUAAADbAOEAAADcBOUAAAAlB+kAAACoAe4AAADYCPMAAgAHAAMAAgAIAAUAAgAJAAcAAgAK
+AAkAAgALAAsAAgAMAA0AAgANAA8AAgAOABEAAgAPABMAAgAQABUAAgARABcAAgASABkAAgATABsA
+AgAUAB0AAgAVAB8AAgAWACEAAgAXACMAAgAYACUAAgAZACcAAgAaACkAAQAeACsAAQAfAC0AAQAg
+AC8AAQAhADEAAQAiADMAAQAjADUAAQAkADcAAQAlADkAAQAmADsAAQAnAD0AAQAoAD8AAQApAEEA
+AQAqAEMAAQArAEUAAQAsAEcAAQAtAEkAAQAuAEsAAQAvAE0AAQAwAE8AAQAxAFEAAgBAAFMAAgBB
+AFUAAQBCAFUAAgBDAFcABIAAAAEAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAGwAmgAAAAAA
+DwAAAAAAAAAAAAAAdQAOCQAAAAAPAAAAAAAAAAAAAAB1ACsJAAAAAAQAAAAAAAAAAAAAAGwAHwYA
+AAAAAAAAAAEAAACQBwAAAAAAAABTQ184MDY5ZGIzMjFmZDQ0MDRhYTRiMjlhOWJjMjk2Y2E1NwA8
+TW9kdWxlPgBnZXRfU3VwcGxpZXJJRABzZXRfU3VwcGxpZXJJRABnZXRfUHJvZHVjdElEAHNldF9Q
+cm9kdWN0SUQASW5wdXRJRABHZXRPdXRwdXRJRABnZXRfQ2F0ZWdvcnlJRABzZXRfQ2F0ZWdvcnlJ
+RABtc2NvcmxpYgBJbnB1dHNGaW5pc2hlZABNYXJrT3V0cHV0c0ZpbmlzaGVkAGdldF9EaXNjb250
+aW51ZWQAc2V0X0Rpc2NvbnRpbnVlZABnZXRfVW5pdFByaWNlAHNldF9Vbml0UHJpY2UAZGVmYXVs
+dEluc3RhbmNlAFJ1bnRpbWVUeXBlSGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAGdldF9Qcm9kdWN0
+TmFtZQBzZXRfUHJvZHVjdE5hbWUASW5wdXROYW1lAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlBp
+cGVsaW5lAFR5cGUAZ2V0X0N1bHR1cmUAc2V0X0N1bHR1cmUAcmVzb3VyY2VDdWx0dXJlAEFwcGxp
+Y2F0aW9uU2V0dGluZ3NCYXNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVk
+QXR0cmlidXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0
+ZQBFZGl0b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJs
+eVRyYWRlbWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25m
+aWd1cmF0aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRp
+b25SZWxheGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlD
+b3B5cmlnaHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUA
+QXNzZW1ibHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAFBy
+ZUV4ZWN1dGUAUG9zdEV4ZWN1dGUAdmFsdWUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBHZXRT
+dHJpbmcAZ2V0X1VuaXRzSW5TdG9jawBzZXRfVW5pdHNJblN0b2NrAFN5c3RlbS5Db21wb25lbnRN
+b2RlbABnZXRfUmVvcmRlckxldmVsAHNldF9SZW9yZGVyTGV2ZWwAU0NfODA2OWRiMzIxZmQ0NDA0
+YWE0YjI5YTliYzI5NmNhNTcuZGxsAGdldF9TdXBwbGllcklEX0lzTnVsbABzZXRfU3VwcGxpZXJJ
+RF9Jc051bGwAZ2V0X1Byb2R1Y3RJRF9Jc051bGwAc2V0X1Byb2R1Y3RJRF9Jc051bGwAZ2V0X0Nh
+dGVnb3J5SURfSXNOdWxsAHNldF9DYXRlZ29yeUlEX0lzTnVsbABnZXRfRGlzY29udGludWVkX0lz
+TnVsbABzZXRfRGlzY29udGludWVkX0lzTnVsbABnZXRfVW5pdFByaWNlX0lzTnVsbABzZXRfVW5p
+dFByaWNlX0lzTnVsbABnZXRfUHJvZHVjdE5hbWVfSXNOdWxsAHNldF9Qcm9kdWN0TmFtZV9Jc051
+bGwAZ2V0X1VuaXRzSW5TdG9ja19Jc051bGwAc2V0X1VuaXRzSW5TdG9ja19Jc051bGwAZ2V0X1Jl
+b3JkZXJMZXZlbF9Jc051bGwAc2V0X1Jlb3JkZXJMZXZlbF9Jc051bGwAZ2V0X1VuaXRzT25PcmRl
+cl9Jc051bGwAc2V0X1VuaXRzT25PcmRlcl9Jc051bGwAZ2V0X1F1YW50aXR5UGVyVW5pdF9Jc051
+bGwAc2V0X1F1YW50aXR5UGVyVW5pdF9Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVz
+b3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXph
+dGlvbgBTeXN0ZW0uUmVmbGVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAFN0cmluZ0Nv
+bXBhcmlzb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAAZ2V0X1VuaXRzT25P
+cmRlcgBzZXRfVW5pdHNPbk9yZGVyAElucHV0MEJ1ZmZlcgBPdXRwdXQwQnVmZmVyAFBpcGVsaW5l
+QnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9yAC5jY3RvcgBPdXRw
+dXRJRHMAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMA
+U3lzdGVtLlJlc291cmNlcwBTQ184MDY5ZGIzMjFmZDQ0MDRhYTRiMjlhOWJjMjk2Y2E1Ny5Qcm9w
+ZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfODA2OWRiMzIxZmQ0
+NDA0YWE0YjI5YTliYzI5NmNhNTcuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1uSW5k
+ZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAEVxdWFscwBDb25uZWN0aW9ucwBCdWZmZXJz
+AEZpbmlzaE91dHB1dHMAQ3JlYXRlTmV3T3V0cHV0Um93cwBPYmplY3QAZ2V0X0VuZE9mUm93c2V0
+AFNldEVuZE9mUm93c2V0AGdldF9RdWFudGl0eVBlclVuaXQAc2V0X1F1YW50aXR5UGVyVW5pdABn
+ZXRfRGVmYXVsdABVc2VyQ29tcG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQA
+TWljcm9zb2Z0LlNxbFNlcnZlci5UeFNjcmlwdABNaWNyb3NvZnQuU3FsU2VydmVyLlBpcGVsaW5l
+SG9zdABJbnB1dDBfUHJvY2Vzc0lucHV0AFByaW1lT3V0cHV0AEFkZFJvdwBJbnB1dDBfUHJvY2Vz
+c0lucHV0Um93AE5leHRSb3cAZ2V0X0Fzc2VtYmx5AAAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAA
+ZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAg
+AEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4A
+IABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQAIAAwAAARTwB1AHQAcAB1AHQAIAAwAABxUwBD
+AF8AOAAwADYAOQBkAGIAMwAyADEAZgBkADQANAAwADQAYQBhADQAYgAyADkAYQA5AGIAYwAyADkA
+NgBjAGEANQA3AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAAAGAo
+ZMlNZzRKvKq3eAwHqRMABCABAQgDIAABBSABARERBCABAQ4FIAEBEVkJIAMBEj0dCBJBAwYSPQMG
+HQgEIAEOCAQgAQIIAyAAAgUgAgEIHAYgAgIOEXEFIAEdCAgDBwEIBgACCBJBDgYAARJ1EXkEIAAS
+fQYgAgEOEn0It3pcVhk04IkIiYRdzYCAzJEDBhIYAwYSHAMGEhACBggDBhJFAwYSUQMGElUDBhIk
+BSABARIMAyAADgQgAQECCSAEAQgOEj0SQQsgBAEIHQgdEj0SQQUgAQESRQQAABJRBAAAElUFAAEB
+ElUEAAASJAMAAAEDKAAOAygAAgQIABJRBAgAElUECAASJAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5v
+bkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0NfODA2OWRiMzIxZmQ0NDA0YWE0YjI5YTli
+YzI5NmNhNTcAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAyMwAASQEAGi5ORVRGcmFtZXdvcmss
+VmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRIuTkVUIEZyYW1ld29yayA0LjcE
+AQAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBt
+c2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2Vu
+PWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAA
+AAAAAAAAAABQQURQQURQtAAAAKA9AAAAAAAAAAAAALo9AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AACsPQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA
+EAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABY
+QAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E
+7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBW
+AGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAA
+AACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAAMAA0
+AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4A
+YQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBD
+AF8AOAAwADYAOQBkAGIAMwAyADEAZgBkADQANAAwADQAYQBhADQAYgAyADkAYQA5AGIAYwAyADkA
+NgBjAGEANQA3AAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAALgAw
+AAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA4ADAANgA5AGQAYgAzADIA
+MQBmAGQANAA0ADAANABhAGEANABiADIAOQBhADkAYgBjADIAOQA2AGMAYQA1ADcALgBkAGwAbAAA
+AEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAA
+QAAgACAAMgAwADIAMwAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAAAAAA
+AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADgAMAA2ADkA
+ZABiADMAMgAxAGYAZAA0ADQAMAA0AGEAYQA0AGIAMgA5AGEAOQBiAGMAMgA5ADYAYwBhADUANwAu
+AGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwA4ADAANgA5AGQA
+YgAzADIAMQBmAGQANAA0ADAANABhAGEANABiADIAOQBhADkAYgBjADIAOQA2AGMAYQA1ADcAAAA0
+AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEA
+QQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAMw9AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                      </arrayElements>
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                      name="VSTAProjectName"
+                      typeConverter="NOTBROWSABLE">SC_8069db321fd4404aa4b29a9bc296ca57</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the programming language used by the script."
+                      name="ScriptLanguage"
+                      typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a comma-separated list of read-only variables."
+                      name="ReadOnlyVariables"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a comma-separated list of read/write variables."
+                      name="ReadWriteVariables"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                    <property
+                      dataType="System.String"
+                      description="List of breakpoints present on the script."
+                      isArray="true"
+                      name="BreakpointCollection"
+                      typeConverter="NOTBROWSABLE">
+                      <arrayElements
+                        arrayElementCount="0" />
+                    </property>
+                    <property
+                      dataType="System.String"
+                      description="Checksum to match component metedata against compiled codes."
+                      name="MetadataChecksum140"
+                      typeConverter="NOTBROWSABLE">1F</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0]"
+                      hasSideEffects="true"
+                      name="Input 0">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[ProductID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProductID"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[ProductName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProductName"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[SupplierID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SupplierID"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[SupplierID]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[CategoryID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CategoryID"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[CategoryID]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[QuantityPerUnit]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="QuantityPerUnit"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[UnitPrice]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UnitPrice"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitPrice]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[UnitsInStock]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UnitsInStock"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[UnitsOnOrder]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UnitsOnOrder"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[ReorderLevel]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ReorderLevel"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ReorderLevel]"
+                          name="ReorderLevel" />
+                        <inputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0].Columns[Discontinued]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Discontinued"
+                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[Discontinued]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0]"
+                      hasSideEffects="true"
+                      name="Output 0">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]"
+                          name="ProductID" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]"
+                          name="ProductName" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[SupplierID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[SupplierID]"
+                          name="SupplierID" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[CategoryID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[CategoryID]"
+                          name="CategoryID" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[QuantityPerUnit]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[QuantityPerUnit]"
+                          name="QuantityPerUnit" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitPrice]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitPrice]"
+                          name="UnitPrice" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsInStock]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsInStock]"
+                          name="UnitsInStock" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsOnOrder]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[UnitsOnOrder]"
+                          name="UnitsOnOrder" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ReorderLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ReorderLevel]"
+                          name="ReorderLevel" />
+                        <outputColumn
+                          refId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[Discontinued]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[Discontinued]"
+                          name="Discontinued" />
                       </outputColumns>
                       <externalMetadataColumns />
                     </output>
@@ -1799,7 +3302,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="ProductID"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Update Products.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductID]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductID]" />
                         <inputColumn
                           refId="Package\Loop CSV Files\Importing the products\Update Products.Inputs[OLE DB Destination Input].Columns[ProductName]"
                           cachedCodepage="1252"
@@ -1807,7 +3310,7 @@ where [refTable].[ProductID] = ?</property>
                           cachedLength="50"
                           cachedName="ProductName"
                           externalMetadataColumnId="Package\Loop CSV Files\Importing the products\Update Products.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
-                          lineageId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output].Columns[ProductName]" />
+                          lineageId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0].Columns[ProductName]" />
                       </inputColumns>
                       <externalMetadataColumns
                         isUsed="True">
@@ -1865,7 +3368,7 @@ where [refTable].[ProductID] = ?</property>
                   startId="Package\Loop CSV Files\Importing the products\Data Conversion.Outputs[Data Conversion Output]" />
                 <path
                   refId="Package\Loop CSV Files\Importing the products.Paths[Flat File Source Output]"
-                  endId="Package\Loop CSV Files\Importing the products\Data Conversion.Inputs[Data Conversion Input]"
+                  endId="Package\Loop CSV Files\Importing the products\Script Component.Inputs[Input 0]"
                   name="Flat File Source Output"
                   startId="Package\Loop CSV Files\Importing the products\Product csv.Outputs[Flat File Source Output]" />
                 <path
@@ -1883,6 +3386,11 @@ where [refTable].[ProductID] = ?</property>
                   endId="Package\Loop CSV Files\Importing the products\Row Sampling.Inputs[Row Sampling Input 1]"
                   name="No Change"
                   startId="Package\Loop CSV Files\Importing the products\Conditional Split.Outputs[No Change]" />
+                <path
+                  refId="Package\Loop CSV Files\Importing the products.Paths[Output 0]"
+                  endId="Package\Loop CSV Files\Importing the products\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Output 0"
+                  startId="Package\Loop CSV Files\Importing the products\Script Component.Outputs[Output 0]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -2017,35 +3525,39 @@ where [refTable].[ProductID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="169,42"
+          Id="Package\Look for row count"
+          TopLeft="457.819444006722,15.799707190225" />
+        <NodeLayout
           Size="168,43"
           Id="Package\Loop CSV Files\Execute SQL Task"
-          TopLeft="93.8333228652676,218.315797535666" />
+          TopLeft="138.208322204029,217.631586996472" />
         <NodeLayout
           Size="185,43"
           Id="Package\Loop CSV Files\Importing the products"
-          TopLeft="91.0833301482102,121.210529406645" />
+          TopLeft="131.458329486971,118.526318867451" />
         <NodeLayout
           Size="161,43"
           Id="Package\Loop CSV Files\Moving CSV Files"
-          TopLeft="89.2083301761498,323.280710035304" />
+          TopLeft="133.583329514911,322.59649949611" />
         <NodeLayout
           Size="152,43"
           Id="Package\Loop CSV Files\Truncate Table"
-          TopLeft="102.583322734883,30.8421097964132" />
+          TopLeft="146.958322073644,30.1578992572188" />
         <EdgeLayout
           Id="Package\Loop CSV Files.PrecedenceConstraints[Constraint]"
-          TopLeft="181.16665977488,73.50877646308">
+          TopLeft="223.458325780308,73.1578992572188">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.7017529435655"
+              EndConnector="0,45.3684196102318"
               Start="0,0"
-              End="0,40.2017529435655">
+              End="0,37.8684196102318">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.2017529435655" />
+                    End="0,37.8684196102318" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2056,18 +3568,18 @@ where [refTable].[ProductID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files.PrecedenceConstraints[Constraint 1]"
-          TopLeft="180.791659840072,163.877196073312">
+          TopLeft="223.0833258455,161.526318867451">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,54.4386014623547"
+              EndConnector="0,56.105268129021"
               Start="0,0"
-              End="0,46.9386014623547">
+              End="0,48.605268129021">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,46.9386014623547" />
+                    End="0,48.605268129021" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2078,7 +3590,7 @@ where [refTable].[ProductID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files.PrecedenceConstraints[Constraint 2]"
-          TopLeft="173.854159854042,260.982464202333">
+          TopLeft="218.229159192803,260.298253663139">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2101,28 +3613,40 @@ where [refTable].[ProductID] = ?</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="355,421"
-          Size="355,464"
+          PanelSize="435,421"
+          Size="435,464"
           Id="Package\Loop CSV Files"
-          TopLeft="577.499998174608,181.114005930647" />
+          TopLeft="396.694444351312,173.808451109169" />
         <NodeLayout
-          Size="168,43"
+          Size="168,73"
           Id="Package\TRUNCATE TABLE ProductsCSV"
-          TopLeft="667.124996079132,61.4912281860825" />
+          TopLeft="671.069440262806,7.71198758289382" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="753.06249712687,104.491228186083">
+          TopLeft="755.069440262806,80.3786542495605">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,76.6227777445645"
+              EndConnector="-69.9305514670499,93.4297968596088"
               Start="0,0"
-              End="0,69.1227777445645">
+              End="-69.9305514670499,85.9297968596088">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,69.1227777445645" />
+                    End="0,51.8522868757319" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.8522868757319"
+                    Point2="0,55.8522868757319"
+                    Point3="-4,55.8522868757319" />
+                  <mssgle:LineSegment
+                    End="-65.9305514670499,55.8522868757319" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-65.9305514670499,55.8522868757319"
+                    Point2="-69.9305514670499,55.8522868757319"
+                    Point3="-69.9305514670499,59.8522868757319" />
+                  <mssgle:LineSegment
+                    End="-69.9305514670499,85.9297968596088" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2131,67 +3655,51 @@ where [refTable].[ProductID] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Look for row count"
-          TopLeft="214,59" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="383,81.4956140930413">
+          TopLeft="627.152777340056,40.4225140532261">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="284.124996079132,0"
+              EndConnector="43.9166629227506,0"
               Start="0,0"
-              End="276.624996079132,0">
+              End="36.4166629227506,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="276.624996079132,0" />
+                    End="36.4166629227506,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="130.312498039566,5,16,16"
+              BoundingBox="10.2083314613753,5,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="298.5,101">
+          TopLeft="542.701388623462,57.799707190225">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="398.666664841275,80.114005930647"
+              EndConnector="0,116.008743918944"
               Start="0,0"
-              End="398.666664841275,72.614005930647">
+              End="0,108.508743918944">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.8527292855519" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,43.8527292855519"
-                    Point2="0,47.8527292855519"
-                    Point3="4,47.8527292855519" />
-                  <mssgle:LineSegment
-                    End="394.666664841275,47.8527292855519" />
-                  <mssgle:CubicBezierSegment
-                    Point1="394.666664841275,47.8527292855519"
-                    Point2="398.666664841275,47.8527292855519"
-                    Point3="398.666664841275,51.8527292855519" />
-                  <mssgle:LineSegment
-                    End="398.666664841275,72.614005930647" />
+                    End="0,108.508743918944" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="191.333332420637,52.8527292855519,16,16"
+              BoundingBox="-8,46.2543719594721,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -2206,34 +3714,132 @@ where [refTable].[ProductID] = ?</property>
         <NodeLayout
           Size="122,42"
           Id="Package\Loop CSV Files\Importing the products\Products"
-          TopLeft="663.749998379499,277.175436033657" />
+          TopLeft="835.749998379499,315.175436033657" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\Loop CSV Files\Importing the products\Data Conversion"
-          TopLeft="368.749994505197,63.3333343121043" />
+          TopLeft="538.749994505197,101.333334312104" />
         <NodeLayout
-          Size="158.666666666667,42.6666666666667"
+          Size="159,43"
           Id="Package\Loop CSV Files\Importing the products\Update Products"
-          TopLeft="163.749997559935,393.421060036755" />
+          TopLeft="333.749997559935,431.421060036755" />
         <NodeLayout
-          Size="114.666666666667,42.6666666666667"
+          Size="165,43"
+          Id="Package\Loop CSV Files\Importing the products\Script Component"
+          TopLeft="334.874995054677,96.7894754872098" />
+        <NodeLayout
+          Size="115,43"
           Id="Package\Loop CSV Files\Importing the products\Lookup"
-          TopLeft="422.49999370426,174.17544166159" />
+          TopLeft="592.49999370426,212.17544166159" />
         <NodeLayout
-          Size="148,42.6666666666667"
+          Size="148,43"
           Id="Package\Loop CSV Files\Importing the products\Row Sampling"
-          TopLeft="522.499992214143,361.26316469462" />
+          TopLeft="692.499992214143,399.26316469462" />
         <NodeLayout
-          Size="157.333333333334,42.6666666666667"
+          Size="157,43"
           Id="Package\Loop CSV Files\Importing the products\Conditional Split"
-          TopLeft="262.499996088445,287.456145334882" />
+          TopLeft="432.499996088445,325.456145334882" />
         <NodeLayout
           Size="136,42"
           Id="Package\Loop CSV Files\Importing the products\Product csv"
-          TopLeft="161.250005718321,8.1578914270506" />
+          TopLeft="158.125008298084,95.4210502490442" />
+        <EdgeLayout
+          Id="Package\Loop CSV Files\Importing the products.Paths[Output 0]"
+          TopLeft="499.874995054677,120.561404899657">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.87499945052,0"
+              Start="0,0"
+              End="31.37499945052,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="31.37499945052,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop CSV Files\Importing the products.Paths[No Change]"
+          TopLeft="511.166662755112,368.122812001549">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="255.333329459032,31.1403526930709"
+              Start="0,0"
+              End="255.333329459032,23.6403526930709">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.5701763465354" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.5701763465354"
+                    Point2="0,15.5701763465354"
+                    Point3="4,15.5701763465354" />
+                  <mssgle:LineSegment
+                    End="251.333329459032,15.5701763465354" />
+                  <mssgle:CubicBezierSegment
+                    Point1="251.333329459032,15.5701763465354"
+                    Point2="255.333329459032,15.5701763465354"
+                    Point3="255.333329459032,19.5701763465354" />
+                  <mssgle:LineSegment
+                    End="255.333329459032,23.6403526930709" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="102.945317073266,20.5701763465354,49.4426953125,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop CSV Files\Importing the products.Paths[Lookup No Match Output]"
+          TopLeft="667.833327037593,255.17544166159">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="228.916671341906,59.999994372067"
+              Start="0,0"
+              End="228.916671341906,52.499994372067">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4939942719587" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4939942719587"
+                    Point2="0,24.4939942719587"
+                    Point3="4,24.4939942719587" />
+                  <mssgle:LineSegment
+                    End="224.916671341906,24.4939942719587" />
+                  <mssgle:CubicBezierSegment
+                    Point1="224.916671341906,24.4939942719587"
+                    Point2="228.916671341906,24.4939942719587"
+                    Point3="228.916671341906,28.4939942719587" />
+                  <mssgle:LineSegment
+                    End="228.916671341906,52.499994372067" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="58.651948952203,29.4939942719587,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Lookup Match Output]"
-          TopLeft="462.055549259815,216.842108328257">
+          TopLeft="632.055549259815,254.842108328257">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2269,43 +3875,29 @@ where [refTable].[ProductID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Flat File Source Output]"
-          TopLeft="297.250005718321,29.1578914270506">
+          TopLeft="294.125008298084,117.355262868127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.4999887868764,55.5087762183871"
+              EndConnector="40.749986756593,0"
               Start="0,0"
-              End="63.9999887868764,55.5087762183871">
+              End="33.249986756593,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="31.7499943934382,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="31.7499943934382,0"
-                    Point2="35.7499943934382,0"
-                    Point3="35.7499943934382,4" />
-                  <mssgle:LineSegment
-                    End="35.7499943934382,51.5087762183871" />
-                  <mssgle:CubicBezierSegment
-                    Point1="35.7499943934382,51.5087762183871"
-                    Point2="35.7499943934382,55.5087762183871"
-                    Point3="39.7499943934382,55.5087762183871" />
-                  <mssgle:LineSegment
-                    End="63.9999887868764,55.5087762183871" />
+                    End="33.249986756593,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Data Conversion Output]"
-          TopLeft="448.08332783853,106.000000978771">
+          TopLeft="618.08332783853,144.000000978771">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2334,14 +3926,12 @@ where [refTable].[ProductID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Change]"
-          TopLeft="316.277773866223,330.122812001549">
+          TopLeft="486.277773866223,368.122812001549">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2372,78 +3962,6 @@ where [refTable].[ProductID] = ?</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-53.9110886739774,30.7016376250332,34.627734375,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Loop CSV Files\Importing the products.Paths[No Change]"
-          TopLeft="341.166662755112,330.122812001549">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="255.333329459032,31.1403526930709"
-              Start="0,0"
-              End="255.333329459032,23.6403526930709">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,11.5701763465354" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,11.5701763465354"
-                    Point2="0,15.5701763465354"
-                    Point3="4,15.5701763465354" />
-                  <mssgle:LineSegment
-                    End="251.333329459032,15.5701763465354" />
-                  <mssgle:CubicBezierSegment
-                    Point1="251.333329459032,15.5701763465354"
-                    Point2="255.333329459032,15.5701763465354"
-                    Point3="255.333329459032,19.5701763465354" />
-                  <mssgle:LineSegment
-                    End="255.333329459032,23.6403526930709" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="94.0766647295158,20.5701763465354,67.18,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Loop CSV Files\Importing the products.Paths[Lookup No Match Output]"
-          TopLeft="497.611104815371,216.842108328257">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="227.138893564128,60.3333277053999"
-              Start="0,0"
-              End="227.138893564128,52.8333277053999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.6314961733055" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.6314961733055"
-                    Point2="0,24.6314961733055"
-                    Point3="4,24.6314961733055" />
-                  <mssgle:LineSegment
-                    End="223.138893564128,24.6314961733055" />
-                  <mssgle:CubicBezierSegment
-                    Point1="223.138893564128,24.6314961733055"
-                    Point2="227.138893564128,24.6314961733055"
-                    Point3="227.138893564128,28.6314961733055" />
-                  <mssgle:LineSegment
-                    End="227.138893564128,52.8333277053999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="57.7630600633141,29.6314961733055,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
