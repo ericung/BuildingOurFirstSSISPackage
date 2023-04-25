@@ -7,12 +7,12 @@
   DTS:CreatorName="ERIC-UNG\unger"
   DTS:DTSID="{B0FABD6A-AAD8-4D44-AB6A-F08C2AD6AA4E}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.948.0"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{C2C88AD8-4C75-4595-951B-1C29CBFD24E1}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{EA1E0834-A458-419E-A09C-12F7B32EA46F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -33,7 +33,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\unger\Downloads\building-first-ssis-package\05\demos\Files\Products.csv">
+          DTS:ConnectionString="C:\Users\eric.ung\source\repos\BuildingOurFirstSSISPackage\Files\Products.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileNamePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Users\unger\Downloads\building-first-ssis-package\05\demos\Files\Products.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Users\eric.ung\source\repos\BuildingOurFirstSSISPackage\Files\Products.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -187,7 +187,7 @@
         <DTS:ObjectData>
           <ForEachFileEnumeratorProperties>
             <FEFEProperty
-              Folder="C:\Users\unger\source\repos\BuildingOurFirstSSISPackage\Files\Files" />
+              Folder="C:\Users\eric.ung\source\repos\BuildingOurFirstSSISPackage\Files\Files" />
             <FEFEProperty
               FileSpec="*.*" />
             <FEFEProperty
@@ -223,7 +223,7 @@
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{135A99B9-1938-4A4B-9125-DEEFC73D77C1}"
-              SQLTask:SqlStatementSource="UPDATE dbo.ProductsCSV&#xA;SET ProductName = u.ProductName&#xA;FROM dbo.ProductsCSV c&#xA;INNER JOIN [Stage.UpdateProducts] u ON u.ProductID = c.ProductID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              SQLTask:SqlStatementSource="UPDATE dbo.ProductsCSV&#xA;SET ProductName = u.ProductName&#xA;FROM dbo.ProductsCSV c&#xA;INNER JOIN stage.UpdateProducts u ON u.ProductID = c.ProductID" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -3461,8 +3461,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{2F753AEA-E48F-4EFC-BA68-36592A5F4173}"
-          DTS:ObjectName="{2F753AEA-E48F-4EFC-BA68-36592A5F4173}"
+          DTS:DTSID="{20625D66-2057-4A62-B933-6DCA6BFA4116}"
+          DTS:ObjectName="{20625D66-2057-4A62-B933-6DCA6BFA4116}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::FileNamePath" />
       </DTS:ForEachVariableMappings>
@@ -3525,23 +3525,23 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="169,42"
+          Size="169.333333333334,42"
           Id="Package\Look for row count"
           TopLeft="457.819444006722,15.799707190225" />
         <NodeLayout
-          Size="168,43"
+          Size="168,42.6666666666667"
           Id="Package\Loop CSV Files\Execute SQL Task"
           TopLeft="138.208322204029,217.631586996472" />
         <NodeLayout
-          Size="185,43"
+          Size="185.333333333334,42.6666666666667"
           Id="Package\Loop CSV Files\Importing the products"
           TopLeft="131.458329486971,118.526318867451" />
         <NodeLayout
-          Size="161,43"
+          Size="161.333333333334,42.6666666666667"
           Id="Package\Loop CSV Files\Moving CSV Files"
           TopLeft="133.583329514911,322.59649949611" />
         <NodeLayout
-          Size="152,43"
+          Size="152,42.6666666666667"
           Id="Package\Loop CSV Files\Truncate Table"
           TopLeft="146.958322073644,30.1578992572188" />
         <EdgeLayout
@@ -3613,40 +3613,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="435,421"
-          Size="435,464"
+          PanelSize="434.666666666667,421.333333333334"
+          Size="434.666666666667,464"
           Id="Package\Loop CSV Files"
           TopLeft="396.694444351312,173.808451109169" />
         <NodeLayout
-          Size="168,73"
+          Size="168,73.3333333333334"
           Id="Package\TRUNCATE TABLE ProductsCSV"
           TopLeft="671.069440262806,7.71198758289382" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="755.069440262806,80.3786542495605">
+          TopLeft="755.069440262806,81.0453209162272">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-69.9305514670499,93.4297968596088"
+              EndConnector="-69.9305514670496,92.7631301929419"
               Start="0,0"
-              End="-69.9305514670499,85.9297968596088">
+              End="-69.9305514670496,85.2631301929419">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.8522868757319" />
+                    End="0,51.4537538683968" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,51.8522868757319"
-                    Point2="0,55.8522868757319"
-                    Point3="-4,55.8522868757319" />
+                    Point1="0,51.4537538683968"
+                    Point2="0,55.4537538683968"
+                    Point3="-4,55.4537538683968" />
                   <mssgle:LineSegment
-                    End="-65.9305514670499,55.8522868757319" />
+                    End="-65.9305514670496,55.4537538683968" />
                   <mssgle:CubicBezierSegment
-                    Point1="-65.9305514670499,55.8522868757319"
-                    Point2="-69.9305514670499,55.8522868757319"
-                    Point3="-69.9305514670499,59.8522868757319" />
+                    Point1="-65.9305514670496,55.4537538683968"
+                    Point2="-69.9305514670496,55.4537538683968"
+                    Point3="-69.9305514670496,59.4537538683968" />
                   <mssgle:LineSegment
-                    End="-69.9305514670499,85.9297968596088" />
+                    End="-69.9305514670496,85.2631301929419" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3699,7 +3699,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8,46.2543719594721,16,16"
+              BoundingBox="-8,46.254371959472,16,16"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3716,55 +3716,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           Id="Package\Loop CSV Files\Importing the products\Products"
           TopLeft="835.749998379499,315.175436033657" />
         <NodeLayout
-          Size="159,43"
+          Size="158.666666666667,42.6666666666667"
           Id="Package\Loop CSV Files\Importing the products\Data Conversion"
           TopLeft="538.749994505197,101.333334312104" />
         <NodeLayout
-          Size="159,43"
-          Id="Package\Loop CSV Files\Importing the products\Update Products"
-          TopLeft="333.749997559935,431.421060036755" />
-        <NodeLayout
-          Size="165,43"
+          Size="165.333333333334,42.6666666666667"
           Id="Package\Loop CSV Files\Importing the products\Script Component"
           TopLeft="334.874995054677,96.7894754872098" />
         <NodeLayout
-          Size="115,43"
+          Size="114.666666666667,42.6666666666667"
           Id="Package\Loop CSV Files\Importing the products\Lookup"
-          TopLeft="592.49999370426,212.17544166159" />
+          TopLeft="564.999994114042,210.807020583201" />
         <NodeLayout
-          Size="148,43"
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Loop CSV Files\Importing the products\Update Products"
+          TopLeft="333.749997559935,431.421060036755" />
+        <NodeLayout
+          Size="148,42.6666666666667"
           Id="Package\Loop CSV Files\Importing the products\Row Sampling"
           TopLeft="692.499992214143,399.26316469462" />
         <NodeLayout
-          Size="157,43"
+          Size="157.333333333334,42.6666666666667"
           Id="Package\Loop CSV Files\Importing the products\Conditional Split"
           TopLeft="432.499996088445,325.456145334882" />
         <NodeLayout
           Size="136,42"
           Id="Package\Loop CSV Files\Importing the products\Product csv"
           TopLeft="158.125008298084,95.4210502490442" />
-        <EdgeLayout
-          Id="Package\Loop CSV Files\Importing the products.Paths[Output 0]"
-          TopLeft="499.874995054677,120.561404899657">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="38.87499945052,0"
-              Start="0,0"
-              End="31.37499945052,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="31.37499945052,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[No Change]"
           TopLeft="511.166662755112,368.122812001549">
@@ -3803,73 +3781,73 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Lookup No Match Output]"
-          TopLeft="667.833327037593,255.17544166159">
+          TopLeft="640.111105225153,253.473687249868">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="228.916671341906,59.999994372067"
+              EndConnector="256.638893154346,61.701748783789"
               Start="0,0"
-              End="228.916671341906,52.499994372067">
+              End="256.638893154346,54.201748783789">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.4939942719587" />
+                    End="0,21.1901634942992" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.4939942719587"
-                    Point2="0,24.4939942719587"
-                    Point3="4,24.4939942719587" />
+                    Point1="0,21.1901634942992"
+                    Point2="0,25.1901634942992"
+                    Point3="4,25.1901634942992" />
                   <mssgle:LineSegment
-                    End="224.916671341906,24.4939942719587" />
+                    End="252.638893154346,25.1901634942992" />
                   <mssgle:CubicBezierSegment
-                    Point1="224.916671341906,24.4939942719587"
-                    Point2="228.916671341906,24.4939942719587"
-                    Point3="228.916671341906,28.4939942719587" />
+                    Point1="252.638893154346,25.1901634942992"
+                    Point2="256.638893154346,25.1901634942992"
+                    Point3="256.638893154346,29.1901634942992" />
                   <mssgle:LineSegment
-                    End="228.916671341906,52.499994372067" />
+                    End="256.638893154346,54.201748783789" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="58.651948952203,29.4939942719587,111.6127734375,11.609375"
+              BoundingBox="72.513059858423,30.1901634942992,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Lookup Match Output]"
-          TopLeft="632.055549259815,254.842108328257">
+          TopLeft="604.555549669597,253.473687249868">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-120.888886504703,70.6140370066254"
+              EndConnector="-93.3888869144857,71.982458085014"
               Start="0,0"
-              End="-120.888886504703,63.1140370066254">
+              End="-93.3888869144857,64.482458085014">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.8286664843563" />
+                    End="0,25.3873338053497" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.8286664843563"
-                    Point2="0,28.8286664843563"
-                    Point3="-4,28.8286664843563" />
+                    Point1="0,25.3873338053497"
+                    Point2="0,29.3873338053497"
+                    Point3="-4,29.3873338053497" />
                   <mssgle:LineSegment
-                    End="-116.888886504703,28.8286664843563" />
+                    End="-89.3888869144857,29.3873338053497" />
                   <mssgle:CubicBezierSegment
-                    Point1="-116.888886504703,28.8286664843563"
-                    Point2="-120.888886504703,28.8286664843563"
-                    Point3="-120.888886504703,32.8286664843563" />
+                    Point1="-89.3888869144857,29.3873338053497"
+                    Point2="-93.3888869144857,29.3873338053497"
+                    Point3="-93.3888869144857,33.3873338053497" />
                   <mssgle:LineSegment
-                    End="-120.888886504703,63.1140370066254" />
+                    End="-93.3888869144857,64.482458085014" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-108.635829971102,33.8286664843563,96.3827734375,11.609375"
+              BoundingBox="-94.8858301759929,34.3873338053497,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -3897,30 +3875,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Loop CSV Files\Importing the products.Paths[Data Conversion Output]"
-          TopLeft="618.08332783853,144.000000978771">
+          TopLeft="620.208327642953,144.000000978771">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="31.7499991990624,68.175440682819"
+              EndConnector="0,66.8070196044307"
               Start="0,0"
-              End="31.7499991990624,60.675440682819">
+              End="0,59.3070196044307">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.0877203414095" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.0877203414095"
-                    Point2="0,34.0877203414095"
-                    Point3="4,34.0877203414095" />
-                  <mssgle:LineSegment
-                    End="27.7499991990624,34.0877203414095" />
-                  <mssgle:CubicBezierSegment
-                    Point1="27.7499991990624,34.0877203414095"
-                    Point2="31.7499991990624,34.0877203414095"
-                    Point3="31.7499991990624,38.0877203414095" />
-                  <mssgle:LineSegment
-                    End="31.7499991990624,60.675440682819" />
+                    End="0,59.3070196044307" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3963,6 +3929,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
             <mssgm:EdgeLabel
               BoundingBox="-53.9110886739774,30.7016376250332,34.627734375,11.6630859375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Loop CSV Files\Importing the products.Paths[Output 0]"
+          TopLeft="499.874995054677,120.561404899657">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.87499945052,0"
+              Start="0,0"
+              End="31.37499945052,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="31.37499945052,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

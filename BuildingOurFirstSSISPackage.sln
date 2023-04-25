@@ -7,6 +7,7 @@ Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "BuildingOurFirstSSISPackage
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{34B2EEFE-90A9-469D-AA3D-011966D86C50}"
 	ProjectSection(SolutionItems) = preProject
+		Files\BackupFiles\AdvWrk17.bak = Files\BackupFiles\AdvWrk17.bak
 		Files\Products.csv = Files\Products.csv
 		Files\Files\Products.csv = Files\Files\Products.csv
 		Files\Files\ProductUpd1.csv = Files\Files\ProductUpd1.csv
@@ -14,6 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{34B2EEFE
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProcessedFiles", "ProcessedFiles", "{7CE39699-C70D-459A-8D96-DA542E406D8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackupFiles", "BackupFiles", "{CB0C25D3-76BC-49F1-97F4-48CDDDB994BC}"
+	ProjectSection(SolutionItems) = preProject
+		Files\BackupFiles\AdvWrk17.bak = Files\BackupFiles\AdvWrk17.bak
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +34,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{7CE39699-C70D-459A-8D96-DA542E406D8E} = {34B2EEFE-90A9-469D-AA3D-011966D86C50}
+		{CB0C25D3-76BC-49F1-97F4-48CDDDB994BC} = {34B2EEFE-90A9-469D-AA3D-011966D86C50}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2180E1F8-8690-433B-A6FF-E0447CA3E68C}
