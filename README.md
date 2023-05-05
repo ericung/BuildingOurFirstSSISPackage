@@ -1,4 +1,3 @@
-# BuildingOurFirstSSISPackage
-Pluralsight course
+# Introduction to SSIS
 
-Followed along course on Pluralsight. [Link](https://app.pluralsight.com/library/courses/building-first-ssis-package/table-of-contents).
+Link to slides. [Link](https://docs.google.com/presentation/d/1t66bRgulGos-MxfPz_wCwTByJhiag0oz03DRSbj-bxE/edit?usp=sharing).
